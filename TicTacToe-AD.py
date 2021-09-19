@@ -20,7 +20,7 @@ def User_input():
 	if b[user_ip]!='x' and b[user_ip]!='o':
 		b[user_ip]='x'
 	else:
-		print("Position NOT available.Try another.")
+		print("Position NOT available.Try another position.")
 		User_input()
 
 
