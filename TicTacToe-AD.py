@@ -16,11 +16,11 @@ def show():
 show()
 
 def User_input():
-	user_ip=int(input("Choose a position: "))
+	user_ip=int(input("Choose YOUR position: "))
 	if b[user_ip]!='x' and b[user_ip]!='o':
 		b[user_ip]='x'
 	else:
-		print("Position already taken.Try another.")
+		print("Position NOT available.Try another.")
 		User_input()
 
 
@@ -52,10 +52,10 @@ def win(str):
 
 while True:
 	if win('x') is True:
-		print("X Player Won.")
+		print("Player X Won.")
 		break
 	elif win('o') is True:
-		print("O Player Won.")
+		print("Player O Won.")
 		break
 	else:
 		User_input()
